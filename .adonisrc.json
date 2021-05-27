@@ -1,0 +1,28 @@
+{
+  "typescript": true,
+  "commands": [
+    "./app/commands",
+    "@adonisjs/core/build/commands",
+    "@adonisjs/repl/build/commands"
+  ],
+  "exceptionHandlerNamespace": "App/Exceptions/Handler",
+  "aliases": {
+    "App": "app",
+    "Domain": "domain"
+  },
+  "directories": {
+    "config": "./app/configuration",
+    "controller": "./app/coletas/entrypoint"
+  },
+  "preloads": [
+    "./app/start/routes",
+    "./app/start/kernel"
+  ],
+  "providers": [
+    "./app/providers/AppProvider",
+    "@adonisjs/core"
+  ],
+  "aceProviders": [
+    "@adonisjs/repl"
+  ]
+}
